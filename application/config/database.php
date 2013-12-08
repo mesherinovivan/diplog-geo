@@ -48,11 +48,11 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = '192.168.10.1\sqlserver';
-$db['default']['username'] = 'Абонентский';
-$db['default']['password'] = '13Rbh31';
-$db['default']['database'] = 'TSCRM33 SMS Work';
-$db['default']['dbdriver'] = 'sqlsrv';
+$db['default']['hostname'] = 'localhost';
+$db['default']['username'] = 'geo-spd';
+$db['default']['password'] = 'qwerty';
+$db['default']['database'] = 'diplom';
+$db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = FALSE;
 $db['default']['db_debug'] = TRUE;

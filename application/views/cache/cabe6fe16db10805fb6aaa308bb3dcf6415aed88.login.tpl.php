@@ -1,4 +1,21 @@
-<!DOCTYPE html>
+<?php /*%%SmartyHeaderCode:146152a469b555de46-84260226%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'cabe6fe16db10805fb6aaa308bb3dcf6415aed88' => 
+    array (
+      0 => 'application\\views\\templates\\login.tpl',
+      1 => 1386503132,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '146152a469b555de46-84260226',
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.12',
+  'unifunc' => 'content_52a469b55b2673_79697370',
+  'cache_lifetime' => 86400,
+),true); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_52a469b55b2673_79697370')) {function content_52a469b55b2673_79697370($_smarty_tpl) {?><!DOCTYPE html>
 <!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]> <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]> <html class="lt-ie9" lang="en"> <![endif]-->
@@ -99,4 +116,4 @@
 </div>  
 </center>
 </body>
-</html>
+</html><?php }} ?>

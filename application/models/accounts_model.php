@@ -10,18 +10,18 @@
  *
  * @author i_mesherinov
  */
-class Accounts_model  extends Base_Model {
+class Accounts_model  extends CI_Model {
     //put your code here
-    private $version_sqlserver;
-    
+ 
     function __construct(){
         parent::__construct();
-        $this->view_table = 'vw_Account';
-        $this->table = 'vw_Account';
+        $this->load->database();
     }
-    public function save($data){
-        $sql = "insert into ".$this->view_table."(Name,INN) values(?,?)";
-        $query = $this->db->query($sql,$data);
+    public function list_accounts(){
+        $this->db->select('*');
+        $this->db->from('tbl_account');
+        $query = $this->db->get();
+        return $query->result('array');
     }
     
 }

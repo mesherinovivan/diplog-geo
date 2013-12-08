@@ -1,4 +1,27 @@
-<!DOCTYPE html>
+<?php /*%%SmartyHeaderCode:2301852a482a7060449-81941677%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '4051158853c5cb928253c7f0730f76684b1bfbd4' => 
+    array (
+      0 => 'application\\views\\templates\\accounts_list.tpl',
+      1 => 1386512700,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '2301852a482a7060449-81941677',
+  'variables' => 
+  array (
+    'PAGE_TITLE' => 0,
+    'data' => 0,
+    'AccountData' => 0,
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.12',
+  'unifunc' => 'content_52a482a70ef924_23413249',
+  'cache_lifetime' => 86400,
+),true); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_52a482a70ef924_23413249')) {function content_52a482a70ef924_23413249($_smarty_tpl) {?><!DOCTYPE html>
 <!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]> <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]> <html class="lt-ie9" lang="en"> <![endif]-->
@@ -10,7 +33,7 @@
     <script src="http://yandex.st/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
 <script>
 ymaps.ready(init);
-{literal}
+
 function setLength(route){
     ////console.log(route.requestPoints[0]+" ::: "+route.requestPoints[1]+"::::"+route.getLength());
     $.get('/accounts/setpoint/'+route.requestPoints[0]+'/'+route.requestPoints[1]+'/'+
@@ -20,7 +43,7 @@ function setLength(route){
     });
 		
 }
-{/literal}
+
 var tmp  = new Array();
 function init() {
     var myMap = new ymaps.Map("map", {
@@ -52,7 +75,7 @@ function init() {
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>{$PAGE_TITLE}</title>
+  <title>Контрагенты</title>
 </head>
 <body>
     
@@ -72,14 +95,17 @@ function init() {
             </td>
         </tr>
         
-    {foreach item=AccountData from=$data key=iter}
-                  <tr>  
-                      <td>{$AccountData.name}</td>  
-                      <td>{$AccountData.address}</td>  
-                      <td>{$AccountData.phone}</td>  
+                      <tr>  
+                      <td>Ореана</td>  
+                      <td>Оренбург ул. Аксакова 8</td>  
+                      <td>83532394567</td>  
                   </tr>        
-    {/foreach}
-    
+                      <tr>  
+                      <td>"Рога и копыта" ООО</td>  
+                      <td>Оренбург проспект Победы 23</td>  
+                      <td>3532784512</td>  
+                  </tr>        
+        
     </table>
     
 
@@ -90,4 +116,4 @@ function init() {
 <html>
 
 </body>
-</html>
+</html><?php }} ?>
