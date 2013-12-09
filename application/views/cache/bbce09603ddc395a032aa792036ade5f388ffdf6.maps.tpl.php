@@ -1,7 +1,51 @@
-{include file='header.tpl'}
+<?php /*%%SmartyHeaderCode:304152a5ad34b538b2-51473728%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'bbce09603ddc395a032aa792036ade5f388ffdf6' => 
+    array (
+      0 => 'application\\views\\templates\\maps\\maps.tpl',
+      1 => 1386589450,
+      2 => 'file',
+    ),
+    '495fc432b3fd34d1f582d189e758c35b360a4790' => 
+    array (
+      0 => 'application\\views\\templates\\header.tpl',
+      1 => 1386579438,
+      2 => 'file',
+    ),
+    '1a11a5a0fb8f5ab7ee1cba46436f1cf4622b284c' => 
+    array (
+      0 => 'application\\views\\templates\\menu.tpl',
+      1 => 1386584636,
+      2 => 'file',
+    ),
+    'b533d1edca42649560846b9ebc978c0398de6ee9' => 
+    array (
+      0 => 'application\\views\\templates\\footer.tpl',
+      1 => 1386583644,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '304152a5ad34b538b2-51473728',
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.12',
+  'unifunc' => 'content_52a5ad34c59e11_16266787',
+  'cache_lifetime' => 86400,
+),true); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_52a5ad34c59e11_16266787')) {function content_52a5ad34c59e11_16266787($_smarty_tpl) {?><html>
+<head>
+    <title>Карта</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+    <script src="http://yandex.st/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+    <script src="js/datepicker-2.6.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="http://diplom/css/style.css" />
+</head>
+
 
 <body>
-{literal}
+
 <script>
 ymaps.ready(function(){
     ///init();
@@ -81,8 +125,14 @@ function getAddress(){
     });
 }
 </script>
-{/literal}
-{include file='menu.tpl'}  
+
+ <div id="sd2" style="width:900px; height:200px; margin:0 auto;">
+<ul class="css-menu-3">
+<li><a href="accounts" class="">Контрагенты</a></li>
+<li><a href="invoices" class="">Счета</a></li>
+<li><a href="maps" class="selected">Карта</a></li>
+<li><a href="#"class="">Настройки</a></li>
+</ul>  
     <div id="top_panel" style="width:900px; height:100px">
         <table border=0>
             <tr>
@@ -114,5 +164,6 @@ function getAddress(){
     <div id="map" style="width:900px; height:900px"></div>
      </div>
 </body>
-{include file='footer.tpl'}
+</body>
 </html>
+</html><?php }} ?>

@@ -4,21 +4,21 @@
     <table  style="width:97%;" class="simple-little-table" cellspacing='0'>
         <tr>
             <th>
-                Название
+                Название контрагента
             </th>
             <th>
-                Адрес
+                Дата счета
             </th>
             <th>
-                Телефон
+                Сумма счета
             </th>
         </tr>
         
-    {foreach item=AccountData from=$data key=iter}
+    {foreach item=InvoiceData from=$data key=iter}
                   <tr>  
-                      <td>{$AccountData.name}</td>  
-                      <td>{$AccountData.address}</td>  
-                      <td>{$AccountData.phone}</td>  
+                      <td>{$InvoiceData.accountname}</td>  
+                      <td>{$InvoiceData.invoice_date}</td>  
+                      <td>{$InvoiceData.amount}</td> 
                   </tr>        
     {/foreach}
     

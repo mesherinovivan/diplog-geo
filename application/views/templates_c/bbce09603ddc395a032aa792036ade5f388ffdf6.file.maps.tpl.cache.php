@@ -1,7 +1,29 @@
-{include file='header.tpl'}
+<?php /* Smarty version Smarty-3.1.12, created on 2013-12-09 14:44:52
+         compiled from "application\views\templates\maps\maps.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:304152a5ad34b538b2-51473728%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'bbce09603ddc395a032aa792036ade5f388ffdf6' => 
+    array (
+      0 => 'application\\views\\templates\\maps\\maps.tpl',
+      1 => 1386589450,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '304152a5ad34b538b2-51473728',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.12',
+  'unifunc' => 'content_52a5ad34bcb960_71960278',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_52a5ad34bcb960_71960278')) {function content_52a5ad34bcb960_71960278($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ('header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, null, array(), 0);?>
+
 
 <body>
-{literal}
+
 <script>
 ymaps.ready(function(){
     ///init();
@@ -81,8 +103,9 @@ function getAddress(){
     });
 }
 </script>
-{/literal}
-{include file='menu.tpl'}  
+
+<?php echo $_smarty_tpl->getSubTemplate ('menu.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, null, array(), 0);?>
+  
     <div id="top_panel" style="width:900px; height:100px">
         <table border=0>
             <tr>
@@ -114,5 +137,6 @@ function getAddress(){
     <div id="map" style="width:900px; height:900px"></div>
      </div>
 </body>
-{include file='footer.tpl'}
-</html>
+<?php echo $_smarty_tpl->getSubTemplate ('footer.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, null, array(), 0);?>
+
+</html><?php }} ?>

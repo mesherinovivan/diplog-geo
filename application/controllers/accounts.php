@@ -30,6 +30,12 @@ class Accounts extends CI_Controller {
         $data = $this->accounts_model->list_accounts();
         $this->smarty_tpl->assign("PAGE_TITLE",'Контрагенты');
         $this->smarty_tpl->assign("data",$data);
+        $this->smarty_tpl->assign("base_url", base_url());
+                $this->smarty_tpl->assign("maps_selected", '');
+        $this->smarty_tpl->assign("account_selected", 'selected');
+        $this->smarty_tpl->assign("invoice_selected", '');
+        $this->smarty_tpl->assign("settings_selected", '');
+        
         $this->smarty_tpl->display("accounts_list.tpl");
     }
     public function setpoint($start_p,$end_p,$length_p){
@@ -37,8 +43,7 @@ class Accounts extends CI_Controller {
                         'end'=>urldecode($end_p),
                         'len'=>urldecode($length_p));
         $this->calcroute_model->set_row_route($params);
-         * 
-         */
-         $this->calcroute_model->min_length('Оренбург 60 Лет октября 2Г');
+*/
+         echo $this->calcroute_model->min_length('Оренбург 60 Лет октября 2Г');
     }
 }
